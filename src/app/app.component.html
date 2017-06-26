@@ -1,3 +1,206 @@
-<h1>
-  {{title}}
-</h1>
+<div class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <!--
+        <div class="card">
+          <div class="header">
+            <h4 class="title">Título</h4>
+            <p class="category">Mes Junio</p>
+          </div>
+          <div class="content">
+            <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+            <div class="footer">
+              <div class="legend">
+                <i class="fa fa-circle text-info"></i> Variable 1
+                <i class="fa fa-circle text-danger"></i> Variable 2
+                <i class="fa fa-circle text-warning"></i> Variable 3
+              </div>
+              <hr>
+              <div class="stats">
+                <i class="fa fa-clock-o"></i> Datos enviados hace 2 días
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+        <app-pie-chart></app-pie-chart>
+      </div>
+
+      <div class="col-md-8">
+        <app-line-chart></app-line-chart>
+        <!--div class="card">
+          <div class="header">
+            <h4 class="title">Título</h4>
+            <p class="category">Movimientos por hora</p>
+          </div>
+          <div class="content">
+            <div id="chartHours" class="ct-chart"></div>
+            <div class="footer">
+              <div class="legend">
+                <i class="fa fa-circle text-info"></i> Variable 1
+                <i class="fa fa-circle text-danger"></i> Variable 2
+                <i class="fa fa-circle text-warning"></i> Variable 3
+              </div>
+              <hr>
+              <div class="stats">
+                <i class="fa fa-history"></i> Ultima actualización hace 5 min
+              </div>
+            </div>
+          </div>
+        </div -->
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <app-bar-chart></app-bar-chart>
+        <!--<div class="card ">
+          <div class="header">
+            <h4 class="title">Título</h4>
+            <p class="category">Estadisticas Anuales</p>
+          </div>
+          <div class="content">
+            <div id="chartActivity" class="ct-chart"></div>
+
+            <div class="footer">
+              <div class="legend">
+                <i class="fa fa-circle text-info"></i> Variable 1
+                <i class="fa fa-circle text-danger"></i> Variable 2
+              </div>
+              <hr>
+              <div class="stats">
+                <i class="fa fa-check"></i> Información de todas las variables
+              </div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+
+      <div class="col-md-6">
+        <div class="card ">
+          <div class="header">
+            <h4 class="title">Datos</h4>
+            <p class="category">Conjunto de datos a graficar</p>
+          </div>
+          <div class="content">
+            <div class="table-full-width">
+              <app-datos [(dataArray)]="mydata"></app-datos>
+              <!--<table class="table">
+                <tbody>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox">
+                    </label>
+                  </td>
+                  <td>Checks de ejemplo</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                    </label>
+                  </td>
+                  <td>Variable 1</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox" checked="">
+                    </label>
+                  </td>
+                  <td>Variable 2
+                  </td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox">
+                    </label>
+                  </td>
+                  <td>Checks de ejemplo</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox">
+                    </label>
+                  </td>
+                  <td>Checks de ejemplo</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" data-toggle="checkbox">
+                    </label>
+                  </td>
+                  <td>Checks de ejemplo</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>-->
+            </div>
+
+            <div class="footer">
+              <hr>
+              <div>
+                <a (click)="addData()" style="color: #1b75b5;"><span class="glyphicon glyphicon-plus" aria-hidden="true" style="font-size: 25px"></span> Agregar mas Variables </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="header">
+    <h4 class="title">Pie Chart</h4>
+    <p class="category">Mes Junio</p>
+  </div>
+  <div class="content">
+    <canvas baseChart height="300"
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [colors]="pieColors"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

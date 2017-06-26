@@ -1,0 +1,18 @@
+<div class="card">
+  <div class="header">
+    <h4 class="title">Line Chart</h4>
+    <p class="category">Movimientos por hora</p>
+  </div>
+  <div class="content">
+    <canvas baseChart height="143"
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [colors]="lineChartColors"
+            [legend]="lineChartLegend"
+            [chartType]="lineChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)">
+    </canvas>
+  </div>
+</div>

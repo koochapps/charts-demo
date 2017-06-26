@@ -1,0 +1,103 @@
+<table class="table">
+  <tbody>
+  <tr *ngFor="let data of arrayOfValues">
+    <td>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" [(ngModel)]="data.enabled" data-toggle="checkbox" (click)="onSelect($event)">
+        </label>
+      </div>
+    </td>
+    <td><input [(ngModel)]="data.name"></td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>
+  <!--<tr>
+    <td>
+      <label class="checkbox">
+        <input type="checkbox" value="" data-toggle="checkbox" checked="">
+      </label>
+    </td>
+    <td>Variable 1</td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label class="checkbox">
+        <input type="checkbox" value="" data-toggle="checkbox" checked="">
+      </label>
+    </td>
+    <td>Variable 2
+    </td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label class="checkbox">
+        <input type="checkbox" value="" data-toggle="checkbox">
+      </label>
+    </td>
+    <td>Checks de ejemplo</td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label class="checkbox">
+        <input type="checkbox" value="" data-toggle="checkbox">
+      </label>
+    </td>
+    <td>Checks de ejemplo</td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label class="checkbox">
+        <input type="checkbox" value="" data-toggle="checkbox">
+      </label>
+    </td>
+    <td>Checks de ejemplo</td>
+    <td class="td-actions text-right">
+      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+        <i class="fa fa-edit"></i>
+      </button>
+      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+        <i class="fa fa-times"></i>
+      </button>
+    </td>
+  </tr>-->
+  </tbody>
+</table>

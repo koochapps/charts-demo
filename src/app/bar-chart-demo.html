@@ -1,0 +1,17 @@
+<div class="card ">
+  <div class="header">
+    <h4 class="title">Bar Chart</h4>
+    <p class="category">Estadisticas Anuales</p>
+  </div>
+  <div class="content">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            [colors]="barColors"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>
